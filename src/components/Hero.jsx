@@ -7,10 +7,10 @@ const Hero = () => {
 
     {/* Container */}
     <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className='text-violet-500'>Hi, my name is</p>
+        <p className='text-violet-400 font-medium text-md'> <span className='text-3xl font-semibold'>Hi 👋🏻</span> , my name is</p>
         <h1 className='text-4xl sm:text-7xl text-violet-200 font-bold my-2'>Danielle Tate</h1>
         <h2 className='text-4xl sm:text-5xl text-[#888fb0] font-bold'>I'm a developer with an unquenchable passion for travel + lifelong learning. </h2>
-        <p className='text-[#888fb0] py-4 max-w-[700px]'>I enjoy working on the front-end of the web. I specialize in building + designining remarkable digital experiences that are responsive and unique. My current focus is developing front-end web applications and collaborating on projects that move me. </p>
+        <p className='text-[#888fb0] py-4 max-w-[700px] leading-7'>I enjoy working on the front-end of the web. I specialize in building + designining remarkable digital experiences that are responsive and unique. My current focus is developing front-end web applications and collaborating on projects that move me. </p>
         <div>
 
         {/* Button Group */}

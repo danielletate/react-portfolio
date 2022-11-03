@@ -13,17 +13,17 @@ const handleClick = () => setMobileNav(!mobileNav);
     <div className="fixed w-full h-24 flex justify-between items-center px-4 bg-gray-800 text-gray-300">
         
        <div> 
-            <img className="w-[150px] mt-4" src={Logo} alt="Logo" />
+            <img className="w-[170px] mt-4 cursor-pointer" src={Logo} alt="Logo" />
         </div>
 
         {/* Nav Menu */}
-        <ul className='hidden md:flex'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>Photos</li>
+        <ul className='hidden md:flex transition'>
+            <li className='hover:underline duration-300'>Home</li>
+            <li className='hover:underline'>About</li>
+            <li className='hover:underline'>Skills</li>
+            <li className='hover:underline'>Projects</li>
+            <li className='hover:underline'>Contact</li>
+            <li className='hover:underline'>Photos</li>
         </ul>
 
        {/* Hamburger Menu */}

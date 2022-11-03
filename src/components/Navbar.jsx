@@ -50,17 +50,17 @@ const handleClick = () => setMobileNav(!mobileNav);
                     Linkedin <FaLinkedin size={30} />
                 </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#595959]'>
                 <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="/">
                     Github <FaGithub size={30} />
                 </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-pink-400'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#FF6651]'>
                 <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="/">
                     Email <HiOutlineMail size={30} />
                 </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-500'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-400'>
                 <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="/">
                     Resume <BsFillPersonLinesFill size={30} />
                 </a>

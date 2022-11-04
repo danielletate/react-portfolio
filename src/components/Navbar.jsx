@@ -17,13 +17,13 @@ const handleClick = () => setMobileNav(!mobileNav);
         </div>
 
         {/* Nav Menu */}
-        <ul className='hidden md:flex transition'>
-            <li className='hover:underline duration-300'>Home</li>
-            <li className='hover:underline'>About</li>
-            <li className='hover:underline'>Skills</li>
-            <li className='hover:underline'>Projects</li>
-            <li className='hover:underline'>Contact</li>
-            <li className='hover:underline'>Photos</li>
+        <ul className='hidden md:flex'>
+            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Home</a></li>
+            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">About</a></li>
+            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Skills</a></li>
+            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Projects</a></li>
+            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Contact</a></li>
+            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Photos</a></li>
         </ul>
 
        {/* Hamburger Menu */}
@@ -46,12 +46,12 @@ const handleClick = () => setMobileNav(!mobileNav);
        <div className='hidden flex fixed flex-col top-[35%] left-0 lg:flex'>
         <ul>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-                <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="/">
+                <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="https://www.linkedin.com/in/danielle-tate-16878a152/" target="_blank"  rel="noreferrer">
                     Linkedin <FaLinkedin size={30} />
                 </a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#595959]'>
-                <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="/">
+                <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="https://github.com/danielletate?tab=repositories" target="_blank"  rel="noreferrer">
                     Github <FaGithub size={30} />
                 </a>
             </li>

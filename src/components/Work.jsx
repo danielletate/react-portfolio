@@ -5,7 +5,7 @@ import WorkImg2 from '../assets/projects/work2-placeholder.jpg'
 
 const Work = () => {
   return (
-    <div name="work" className="w-full bg-gray-800 text-gray-300 md:h-screen">
+    <section name="work" className="w-full bg-gray-800 text-gray-300 md:h-screen">
 
         {/* Container */}
         <div className='w-full h-full max-w-[1000px] mx-auto px-5 flex flex-col justify-center'>
@@ -118,7 +118,7 @@ const Work = () => {
 
             </div>
         </div>
-    </div>
+    </section>
   );
 };
 

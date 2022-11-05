@@ -11,7 +11,7 @@ import Squarespace from '../assets/squarespace.png'
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full bg-gray-800 text-gray-300'>
+    <section name='skills' className='w-full bg-gray-800 text-gray-300'>
 
     {/* Container */}
     <div className='w-full max-w-[1000px] mx-auto px-5 flex flex-col justify-center'>
@@ -60,7 +60,7 @@ const Skills = () => {
             </div>
         </div>
     </div>
-  </div>
+  </section>
   );
 };
 

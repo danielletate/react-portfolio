@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'react-scroll'
 import Logo from '../assets/logo.png'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
@@ -18,12 +19,36 @@ const handleClick = () => setMobileNav(!mobileNav);
 
         {/* Nav Menu */}
         <ul className='hidden md:flex'>
-            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Home</a></li>
-            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">About</a></li>
-            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Skills</a></li>
-            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Projects</a></li>
-            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Contact</a></li>
-            <li className='transition-text duration-300 hover:text-violet-500'><a href="#">Photos</a></li>
+            <li className='transition-text duration-300 hover:text-violet-500'>
+                <Link onClick={handleClick} to="hero" smooth={true} duration={500}>
+                    Home
+                </Link>
+            </li>
+            <li className='transition-text duration-300 hover:text-violet-500'>
+                <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                    About
+                </Link>
+            </li>
+            <li className='transition-text duration-300 hover:text-violet-500'>
+                <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+                    Skills
+                </Link>
+            </li>
+            <li className='transition-text duration-300 hover:text-violet-500'>
+                <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+                    Projects
+                </Link>
+            </li>
+            <li className='transition-text duration-300 hover:text-violet-500'>
+                <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                    Contact
+                </Link>
+            </li>
+            <li className='transition-text duration-300 hover:text-violet-500'>
+                <Link onClick={handleClick} to="photos" smooth={true} duration={500}>
+                    Photos
+                </Link>
+            </li>
         </ul>
 
        {/* Hamburger Menu */}
@@ -33,12 +58,36 @@ const handleClick = () => setMobileNav(!mobileNav);
 
        {/* Mobile Menu */}
        <ul className={!mobileNav ? 'hidden' : 'bg-gray-800 absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center'}>
-            <li className='text-4xl py-6'>Home</li>
-            <li className='text-4xl py-6'>About</li>
-            <li className='text-4xl py-6'>Skills</li>
-            <li className='text-4xl py-6'>Projects</li>
-            <li className='text-4xl py-6'>Contact</li>
-            <li className='text-4xl py-6'>Photos</li>
+            <li className='text-4xl py-6'>
+                <Link onClick={handleClick} to="hero" smooth={true} duration={500}>
+                    Home
+                </Link>
+            </li>
+            <li className='text-4xl py-6'>
+                <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                    About
+                </Link>
+            </li>
+            <li className='text-4xl py-6'>
+                <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+                    Skills
+                </Link>
+            </li>
+            <li className='text-4xl py-6'>
+                <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+                    Projects
+                </Link>
+            </li>
+            <li className='text-4xl py-6'>
+                <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                    Contact
+                </Link>
+            </li>
+            <li className='text-4xl py-6'>
+                <Link onClick={handleClick} to="photos" smooth={true} duration={500}>
+                    Photos
+                </Link>
+            </li>
         </ul>
 
 
@@ -56,7 +105,7 @@ const handleClick = () => setMobileNav(!mobileNav);
                 </a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#FF6651]'>
-                <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="/">
+                <a className='w-full text-gray-300 flex justify-between items-center pl-2' href="mailto:danielle.tate825@gmail.com" >
                     Email <HiOutlineMail size={30} />
                 </a>
             </li>

@@ -46,7 +46,7 @@ const Skills = () => {
                 <img className='w-20 mx-auto' src={Git} alt="Git Icon" />
                 <p className='my-4 uppercase text-sm'>Git</p>
             </div>
-            <div className='shadow-md shadow-[#040720] hover:scale-110 duration-500'>
+            <div className='shadow-md shadow-[#040720] hover:scale-110 duration-500 cursor-pointer'>
                 <img className='w-20 mx-auto' src={Tailwind} alt="Tailwind Icon" />
                 <p className='my-4 uppercase text-sm'>Tailwind CSS</p>
             </div>

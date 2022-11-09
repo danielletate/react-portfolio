@@ -20,32 +20,32 @@ const handleClick = () => setMobileNav(!mobileNav);
         {/* Nav Menu */}
         <ul className='hidden md:flex'>
             <li className='transition-text duration-300 hover:text-violet-500'>
-                <Link onClick={handleClick} to="hero" smooth={true} duration={500}>
+                <Link to="hero" smooth={true} duration={500}>
                     Home
                 </Link>
             </li>
             <li className='transition-text duration-300 hover:text-violet-500'>
-                <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                <Link to="about" smooth={true} duration={500}>
                     About
                 </Link>
             </li>
             <li className='transition-text duration-300 hover:text-violet-500'>
-                <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+                <Link to="skills" smooth={true} duration={500}>
                     Skills
                 </Link>
             </li>
             <li className='transition-text duration-300 hover:text-violet-500'>
-                <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+                <Link to="work" smooth={true} duration={500}>
                     Projects
                 </Link>
             </li>
             <li className='transition-text duration-300 hover:text-violet-500'>
-                <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                <Link to="contact" smooth={true} duration={500}>
                     Contact
                 </Link>
             </li>
             <li className='transition-text duration-300 hover:text-violet-500'>
-                <Link onClick={handleClick} to="photos" smooth={true} duration={500}>
+                <Link to="photos" smooth={true} duration={500}>
                     Photos
                 </Link>
             </li>

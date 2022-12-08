@@ -3,10 +3,7 @@ import Photography1 from '../assets/photos/photography1-placeholder.jpg';
 
 const Photos = () => {
   return (
-    <section
-      name="photos"
-      className="w-full h-screen bg-gray-800 flex justify-center items-center"
-    >
+    <section className="w-full h-[700px] bg-gray-800 flex justify-center items-center md:h-[650px]">
       {/* Container */}
       <div className="w-full h-full max-w-[1000px] mx-auto px-5 flex flex-col justify-center text-gray-300">
         <div className="py-2 pb-6">

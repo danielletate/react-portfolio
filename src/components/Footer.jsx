@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../assets/logo.png';
-import { Link } from 'react-scroll';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -29,34 +29,22 @@ const Footer = () => {
         </div>
         <ul className="flex justify-center items-center py-4 text-gray-600 ">
           <li>
-            <Link to="hero" smooth={true} duration={500}>
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="about" smooth={true} duration={500}>
-              About
-            </Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="skills" smooth={true} duration={500}>
-              Skills
-            </Link>
+            <Link to="/skills">Skills</Link>
           </li>
           <li>
-            <Link to="work" smooth={true} duration={500}>
-              Projects
-            </Link>
+            <Link to="/work">Work</Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link to="photos" smooth={true} duration={500}>
-              Photos
-            </Link>
+            <Link to="/photos">Photos</Link>
           </li>
         </ul>
         <p className="text-violet-400 py-4 text-sm">

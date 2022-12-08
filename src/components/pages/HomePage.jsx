@@ -5,14 +5,14 @@ import Skills from '../Skills';
 import Work from '../Work';
 import Contact from '../Contact';
 import Photos from '../Photos';
-import ScrollToTop from '../ScrollToTop';
+import ScrollToTopButton from '../ScrollToTopButton';
 
 const HomePage = () => {
   return (
     <>
+      <ScrollToTopButton />
       <Hero />
       <About />
-      <ScrollToTop />
       <Skills />
       <Work />
       <Contact />

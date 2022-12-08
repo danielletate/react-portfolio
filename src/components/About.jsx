@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-gray-800 text-gray-300">
+    <div className="w-full h-screen bg-gray-800 text-gray-300">
       {/* Container */}
       <div className="flex flex-col justify-center px-4 items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
@@ -12,7 +12,6 @@ const About = () => {
               About
             </p>
           </div>
-          <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid gap-8 px-4 sm:grid-cols-2">
           <div className="text-4xl font-bold sm:text-right">
@@ -23,7 +22,7 @@ const About = () => {
           </div>
           <div>
             {/* Bio info */}
-            <p className="leading-loose mb-10">
+            <p className="leading-7 mb-10">
               I am a proudly self-taught developer who has dedicated the past
               few years of my life to learning and understanding how the web
               works. Having transitioned from a non-technical industry (fun
@@ -33,9 +32,9 @@ const About = () => {
             </p>
 
             {/* Link to About Page */}
-            <Link to="/about">
+            <Link to="/about-page">
               <button className="text-white group border-2 px-6 py-3 my-10 flex items-center hover:bg-violet-600 hover:border-violet-600 hover:duration-300">
-                View More
+                Read More
               </button>
             </Link>
           </div>

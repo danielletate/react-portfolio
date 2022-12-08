@@ -8,10 +8,7 @@ const Contact = () => {
   console.log(name);
 
   return (
-    <section
-      name="contact"
-      className="w-full h-screen bg-gray-800 flex justify-center items-center"
-    >
+    <section className="w-full h-screen bg-gray-800 flex justify-center items-center md:h-[860px]">
       {/* Container */}
       <div className="w-full max-w-[1000px] mx-auto px-6">
         <div className="pb-4">

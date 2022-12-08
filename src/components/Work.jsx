@@ -5,8 +5,8 @@ const Work = () => {
   const project = ProjectsData;
   return (
     <section
-      name="work"
-      className="w-full h-[1000px] bg-gray-800 text-gray-300 md:h-screen"
+      id="work"
+      className="w-full h-[900px] bg-gray-800 text-gray-300 md:h-[700px]"
     >
       {/* Container */}
       <div className="w-full h-full max-w-[1000px] mx-auto px-5 flex flex-col justify-center">
@@ -15,7 +15,8 @@ const Work = () => {
             Work
           </p>
           <p className="py-6 md:max-w-full max-w-sm">
-            Below are a few past projects that I've worked on. Want to see more?
+            Below are several recent projects that I've worked on. Want to see
+            more?
             <a
               className="text-violet-500 ml-1 font-medium"
               href="mailto:danielle.tate825@gmail.com"
@@ -26,7 +27,7 @@ const Work = () => {
         </div>
 
         {/* Projects container */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid gap-4 cursor-default sm:grid-cols-1 md:grid-cols-2">
           {/* Grid Item */}
           {project.map((item, index) => (
             <div

@@ -34,12 +34,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-// {skill.map((item, index) => (
-//   <div key={index} className="grid grid-cols-4 gap-4 text-center py-8">
-//     <div className="shadow-md shadow-[#040720] hover:scale-110 duration-300">
-//       <img src={item.image} className="w-20 mx-auto" />
-//       <p className="my-4 text-sm">{item.title}</p>
-//     </div>
-//   </div>
-// ))}

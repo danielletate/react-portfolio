@@ -1,5 +1,6 @@
 import WorkImg1 from '../assets/projects/netflix-clone.jpg';
-import WorkImg2 from '../assets/projects/jeffco-dems.jpg';
+import WorkImg2 from '../assets/projects/budget-buddy.png';
+import WorkImg3 from '../assets/projects/jeffco-dems.jpg';
 
 export const ProjectsData = [
   {
@@ -12,8 +13,17 @@ export const ProjectsData = [
   },
   {
     id: 2,
-    name: 'Jefferson County Democratic Party',
+    name: 'Budget Buddy',
     image: WorkImg2,
+    github: 'https://github.com/danielletate/budget-buddy',
+    description:
+      'CRUD budgeting app that allows users to create individual budgets and add expenses. Built with React and Tailwind CSS, and implements custom hooks.',
+    live: 'https://celebrated-treacle-932136.netlify.app',
+  },
+  {
+    id: 3,
+    name: 'Jefferson County Democratic Party',
+    image: WorkImg3,
     github: '',
     description: 'Website designed and built using the Squarespace platform.',
     live: 'https://www.jeffcodems.org/',

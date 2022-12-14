@@ -10,13 +10,13 @@ import ScrollToTopButton from '../ScrollToTopButton';
 const HomePage = () => {
   return (
     <>
-      <ScrollToTopButton />
       <Hero />
       <About />
       <Skills />
       <Work />
       <Contact />
       <Photos />
+      <ScrollToTopButton />
     </>
   );
 };

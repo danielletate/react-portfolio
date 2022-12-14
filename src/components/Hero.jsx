@@ -16,12 +16,12 @@ const Hero = () => {
           Danielle Tate
         </h1>
         <h2 className="text-4xl sm:text-5xl text-[#888fb0] font-bold">
-          I'm a developer with a passion for lifelong learning and enhancing
-          user experiences.
+          I'm a developer with a passion for learning and enhancing user
+          experiences.
         </h2>
         <p className="text-[#888fb0] py-4 max-w-[700px] leading-7 mt-4">
           I enjoy working on the front-end of the web. I specialize in building
-          + designining stunning digital experiences that are responsive and
+          + designing stunning digital experiences that are responsive and
           unique. Currently, I am focused on discovering opportunities that will
           allow me to apply my creative, communicative, and analytical skillsets
           on a development team.

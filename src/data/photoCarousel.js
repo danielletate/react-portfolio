@@ -15,11 +15,12 @@ export const photoCarousel = [
     image: TajMahal,
   },
   {
-    image: Animals,
-  },
-  {
     image: AngkorWat,
   },
+  {
+    image: Animals,
+  },
+
   {
     image: AngkorWat2,
   },

@@ -8,7 +8,7 @@ const Work = () => {
     <>
       <section
         id="work"
-        className="w-full h-[900px] bg-gray-800 text-gray-300 md:h-[700px]"
+        className="w-full h-[1200px] bg-gray-800 text-gray-300 md:h-[900px]"
       >
         {/* Container */}
         <div className="w-full h-full max-w-[1000px] mx-auto px-5 flex flex-col justify-center">
@@ -29,48 +29,51 @@ const Work = () => {
           </div>
 
           {/* Projects container */}
-          <div className="grid gap-4 cursor-default sm:grid-cols-1 md:grid-cols-2">
+          <div className="grid gap-8 cursor-default sm:grid-cols-1 md:grid-cols-2">
             {/* Grid Item */}
-            {project.map((item, index) => (
-              <div
-                key={index}
-                style={{ backgroundImage: `url(${item.image})` }}
-                className="shadow-lg shadow-[#040a16] container rounded-md flex flex-col justify-evenly text-center items-center py-2
+            {project &&
+              project.map((item, index) => (
+                <div
+                  key={index}
+                  style={{ backgroundImage: `url(${item.image})` }}
+                  className="shadow-lg shadow-[#040a16] container rounded-md flex flex-col justify-evenly text-center items-center p-4
                content-div group"
-              >
-                {/* Hover overlay effect for images */}
-                <div className="opacity-0 group-hover:opacity-100 max-w-sm">
-                  <span className="text-2xl font-bold text-white tracking-wider uppercase">
-                    {item.name}
-                  </span>
+                >
+                  {/* Hover overlay effect for images */}
+                  <div className="opacity-0 group-hover:opacity-100">
+                    <span className="text-2xl font-bold text-white tracking-wider uppercase">
+                      {item.name}
+                    </span>
 
-                  {/* Description */}
-                  <p className="text-sm text-gray-200 mt-6">
-                    {item.description}
-                  </p>
+                    {/* Description */}
+                    <p className="text-sm text-gray-200 mt-6">
+                      {item.description}
+                    </p>
 
-                  {/* Buttons container */}
-                  <div className="pt-8 text-center ">
-                    <a href={item.github} target="_blank">
-                      <button
-                        className="text-center rounded-md px-4 py-3 
+                    {/* Buttons container */}
+                    <div className="pt-8 text-center ">
+                      {item.github && (
+                        <a href={item.github} target="_blank">
+                          <button
+                            className="text-center rounded-md px-4 py-3 
+                    bg-white text-gray-700 font-bold text-sm"
+                          >
+                            Code
+                          </button>
+                        </a>
+                      )}
+                      <a href={item.live} target="_blank">
+                        <button
+                          className="text-center rounded-md px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-sm"
-                      >
-                        Code
-                      </button>
-                    </a>
-                    <a href={item.live} target="_blank">
-                      <button
-                        className="text-center rounded-md px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-sm"
-                      >
-                        Live
-                      </button>
-                    </a>
+                        >
+                          Live
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </section>

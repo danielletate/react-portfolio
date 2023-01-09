@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <li className="transition-text duration-300 hover:text-violet-500">
-          <Link to="/photos">Photos</Link>
+          <Link to="/photography-page">Photos</Link>
         </li>
       </ul>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="text-4xl py-6">
-          <Link to="/photos" onClick={handleClick}>
+          <Link to="/photography-page" onClick={handleClick}>
             Photos
           </Link>
         </li>

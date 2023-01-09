@@ -1,11 +1,14 @@
 import React from 'react';
-import Photography1 from '../assets/photos/photography1-placeholder.jpg';
 import ScrollToTop from './ScrollToTopButton';
+import { photoCarousel } from '../data/photoCarousel';
+import Carousel from 'better-react-carousel';
+import { Link } from 'react-router-dom';
 
 const Photos = () => {
+  const photos = photoCarousel;
   return (
     <>
-      <section className="w-full h-[700px] bg-gray-800 flex justify-center items-center md:h-[650px]">
+      <section className="w-full h-screen bg-gray-800 flex justify-center items-center md:h-[650px]">
         {/* Container */}
         <div className="w-full h-full max-w-[1000px] mx-auto px-5 flex flex-col justify-center text-gray-300">
           <div className="py-2 pb-6">
@@ -18,34 +21,21 @@ const Photos = () => {
           </div>
 
           {/* Photos Container */}
-          <div class="flex flex-wrap -m-1 md:-m-2">
-            <div class="flex flex-wrap w-1/2 md:w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img
-                  alt=""
-                  class="block object-cover object-center w-full h-full rounded-sm"
-                  src={Photography1}
-                />
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/2 md:w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img
-                  alt=""
-                  class="block object-cover object-center w-full h-full rounded-sm"
-                  src={Photography1}
-                />
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/2 md:w-1/3">
-              <div class="w-full p-1 md:p-2">
-                <img
-                  alt=""
-                  class="block object-cover object-center w-full h-full rounded-sm"
-                  src={Photography1}
-                />
-              </div>
-            </div>
+          <div className="flex flex-wrap justify-center -m-1 md:-m-2">
+            {/* Photo Carousel */}
+            <Carousel cols={2} rows={1} gap={10} loop>
+              {photos &&
+                photos.map((photo) => (
+                  <Carousel.Item>
+                    <img width="100%" height="100%" src={photo.image} />
+                  </Carousel.Item>
+                ))}
+            </Carousel>
+            <Link to="/photography-page">
+              <button className="text-white group border-2 px-6 py-3 my-10 flex items-center hover:bg-violet-600 hover:border-violet-600 hover:duration-300">
+                See More
+              </button>
+            </Link>
           </div>
         </div>
       </section>

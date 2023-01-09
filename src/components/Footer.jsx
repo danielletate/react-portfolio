@@ -48,7 +48,7 @@ const Footer = () => {
           </li>
         </ul>
         <p className="text-violet-400 py-4 text-sm">
-          © 2022, Built & designed by Danielle Tate. All Rights Reserved.
+          © 2023, Built & designed by Danielle Tate. All Rights Reserved.
         </p>
       </div>
     </footer>

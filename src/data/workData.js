@@ -9,7 +9,8 @@ export const ProjectsData = [
     name: 'Netflix Clone',
     image: WorkImg1,
     github: 'https://github.com/danielletate/netflix-clone',
-    description: 'React application built using Tailwind CSS and Firebase.',
+    description:
+      'React application built using Tailwind CSS and Firebase. User can create an account, Login and Logout, and "favorite" movies.',
     live: 'https://netflix-clone-87396.web.app/',
   },
   {

@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Work from './components/Work';
 import Contact from './components/Contact';
 import PhotographyPage from './components/pages/PhotographyPage';
+import Photos from './components/Photos';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/photos" element={<Photos />} />
         <Route path="/photography-page" element={<PhotographyPage />} />
       </Routes>
       <Footer />

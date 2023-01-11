@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleClick = () => setMobileNav(!mobileNav);
 
   return (
-    <div className="fixed w-full h-24 flex justify-between items-center px-4 bg-gray-800 text-gray-300">
+    <div className="fixed px-20 py-14 w-full h-24 z-50 flex justify-between items-center bg-gray-800 text-gray-300">
       <div>
         <Link to="/">
           <img
@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <li className="transition-text duration-300 hover:text-violet-500">
-          <Link to="/photography-page">Photos</Link>
+          <Link to="/photos">Photos</Link>
         </li>
       </ul>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="text-4xl py-6">
-          <Link to="/photography-page" onClick={handleClick}>
+          <Link to="/photos" onClick={handleClick}>
             Photos
           </Link>
         </li>

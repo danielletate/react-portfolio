@@ -1,14 +1,14 @@
 import React from 'react';
 import ScrollToTop from './ScrollToTopButton';
-import { photoCarousel } from '../data/photoCarousel';
+import { travelPhotos } from '../data/travelPhotos.js';
 import Carousel from 'better-react-carousel';
 import { Link } from 'react-router-dom';
 
 const Photos = () => {
-  const photos = photoCarousel;
+  const photos = travelPhotos;
   return (
     <>
-      <section className="w-full h-screen bg-gray-800 flex justify-center items-center md:h-[650px]">
+      <section className="w-full h-screen bg-gray-800 flex justify-center items-center">
         {/* Container */}
         <div className="w-full h-full max-w-[1000px] mx-auto px-5 flex flex-col justify-center text-gray-300">
           <div className="py-2 pb-6">
@@ -27,7 +27,12 @@ const Photos = () => {
               {photos &&
                 photos.map((photo) => (
                   <Carousel.Item>
-                    <img width="100%" height="100%" src={photo.image} />
+                    <img
+                      width="100%"
+                      height="100%"
+                      src={photo.image}
+                      className="rounded-md"
+                    />
                   </Carousel.Item>
                 ))}
             </Carousel>

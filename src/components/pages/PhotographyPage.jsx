@@ -1,7 +1,9 @@
 import React from 'react';
+import { travelPhotos } from '../../data/travelPhotos';
 
 const PhotographyPage = () => {
-  return <div>PhotographyPage</div>;
-};
+  const images = travelPhotos;
 
+  return <div className="App"></div>;
+};
 export default PhotographyPage;
